@@ -26,7 +26,7 @@ Problem with this one is that resonance frequencies are not negated completely, 
 ## HifiScan+EEGuide
 _(I use this one now)_
 
-Some time later, Tom suggested me to try [HifiScan](https://github.com/erdewit/HiFiScan), and I did.
+Some time later, Tim suggested me to try [HifiScan](https://github.com/erdewit/HiFiScan), and I did.
 
 ![doing the sweep](./images/sweep.jpg)
 _image is just to show my measuring configuration, this is not the resulting IRS_
