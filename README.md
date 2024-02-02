@@ -5,16 +5,16 @@ There's a [progress thread](https://community.frame.work/t/guide-yet-another-eas
 
 ## Installing
 
-For a change, not a `curl | bash`, but a `curl | unzip`. Paste in your terminal and you should be good to go.
+For a change, not a `curl | bash`, but a `curl | unzip`. Paste in your bash/zsh/sh terminal and you should be good to go.
 
 ```bash
 TMP=$(mktemp -d) && \
-    CFG=${XDG_CONFIG_HOME:-~/.config}/easyeffects
-    curl -Lo $TMP/fwdsp.zip https://github.com/cab404/framework-dsp/archive/refs/heads/master.zip && \
-    unzip -d $TMP $TMP/fwdsp.zip 'framework-dsp-master/config/**/*' && \
-    sed -i 's|%CFG%|'$CFG'|g' $TMP/**/*.json && \
-    cp -rv $TMP/framework-dsp-master/config/* $CFG && \
-    rm -rf $TMP
+CFG=${XDG_CONFIG_HOME:-~/.config}/easyeffects && \
+curl -Lo $TMP/fwdsp.zip https://github.com/cab404/framework-dsp/archive/refs/heads/master.zip && \
+unzip -d $TMP $TMP/fwdsp.zip 'framework-dsp-master/config/**/*' && \
+sed -i 's|%CFG%|'$CFG'|g' $TMP/**/*.json && \
+cp -rv $TMP/framework-dsp-master/config/* $CFG && \
+rm -rf $TMP
 ```
 
 ## EEGuide+Exciter
