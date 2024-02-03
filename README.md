@@ -31,7 +31,9 @@ Some time later, Tim suggested me to try [HifiScan](https://github.com/erdewit/H
 ![doing the sweep](./images/sweep.jpg)
 _image is just to show my measuring configuration, this is not the resulting IRS_
 
-After some tinkering with IRS, I've settled on 5dB correction, just to get the resonance frequencies out, and not to remove all the volume.
+After some tinkering with IRS, I've ~~settled on 5dB correction~~ switched to 16dB corrections, to get the resonance frequencies out, and not to remove all the volume.
+
+
 
 I've deleted exciter (cause IMO it sounds better without it with convolver in place), and re-tuned compressor.
 
