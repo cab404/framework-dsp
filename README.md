@@ -12,7 +12,7 @@ TMP=$(mktemp -d) && \
 CFG=${XDG_CONFIG_HOME:-~/.config}/easyeffects && \
 curl -Lo $TMP/fwdsp.zip https://github.com/cab404/framework-dsp/archive/refs/heads/master.zip && \
 unzip -d $TMP $TMP/fwdsp.zip 'framework-dsp-master/config/*/*' && \
-sed -i 's|%CFG%|'$CFG'|g' $TMP/**/*.json && \
+sed -i 's|%CFG%|'$CFG'|g' $TMP/*/*.json && \
 cp -rv $TMP/framework-dsp-master/config/* $CFG && \
 rm -rf $TMP
 ```
