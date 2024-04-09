@@ -5,6 +5,8 @@ There's a [progress thread](https://community.frame.work/t/guide-yet-another-eas
 
 ## Installing
 
+You do require EasyEffects, so install it first using your particular distro instructions.
+
 For a change, not a `curl | bash`, but a `curl | unzip`. Paste in your bash/zsh/sh terminal and you should be good to go.
 
 ```bash
