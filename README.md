@@ -13,11 +13,11 @@ For a change, not a `curl | bash`, but a `curl | unzip`. Paste in your bash/zsh/
 TMP=$(mktemp -d) && \
 CFG=${XDG_CONFIG_HOME:-~/.config}/easyeffects && \
 mkdir -p "$CFG" && \
-curl -Lo $TMP/fwdsp.zip https://github.com/cab404/framework-dsp/archive/refs/heads/master.zip && \
-unzip -d $TMP $TMP/fwdsp.zip 'framework-dsp-master/config/*/*' && \
-sed -i 's|%CFG%|'$CFG'|g' $TMP/framework-dsp-master/config/*/*.json && \
-cp -rv $TMP/framework-dsp-master/config/* $CFG && \
-rm -rf $TMP
+curl -Lo "$TMP"/fwdsp.zip https://github.com/cab404/framework-dsp/archive/refs/heads/master.zip && \
+unzip -d "$TMP" "$TMP"/fwdsp.zip 'framework-dsp-master/config/*/*' && \
+sed -i 's|%CFG%|'"$CFG"'|g' $TMP/framework-dsp-master/config/*/*.json && \
+cp -rv "$TMP"/framework-dsp-master/config/* "$CFG" && \
+rm -rf "$TMP"
 ```
 
 ## EEGuide+Exciter
