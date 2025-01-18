@@ -1,7 +1,7 @@
 EasyEffects Framework DSP profiles
 =======
 
-There's a [progress thread](https://community.frame.work/t/guide-yet-another-easyeffects-profile/40509/) on Framework community forum.
+There's a [progress thread](https://community.frame.work/t/guide-framework-dsp-better-linux-audio/44645) on Framework community forum.
 
 ## Installing
 
